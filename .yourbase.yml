@@ -5,6 +5,11 @@ build_targets:
   container:
     image: yourbase/yb_ubuntu_ng_2:18.04
   name: default
+  environment:
+  - AWS_REGION="us-west-2"
+  - AWS_ACCESS_KEY_ID="test"
+  - AWS_SECRET_ACCESS_KEY="test"
+  - S3_DATA_BUCKET_NAME="test"
 ci:
   builds:
   - build_target: default
@@ -12,3 +17,4 @@ ci:
 dependencies:
   build:
   - ruby:2.4.0
+  - node:10.15.2
