@@ -3,7 +3,7 @@ build_targets:
   - chmod +x yourbased.sh
   - sh ./yourbased.sh
   container:
-    image: yourbase/yb_ubuntu:16.04
+    image: yourbase/yb_ubuntu_ng_2:18.04
   name: default
 ci:
   builds:
