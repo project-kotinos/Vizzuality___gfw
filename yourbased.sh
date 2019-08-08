@@ -9,5 +9,6 @@ gem install bundler -v 2.0.1
 # install
 bundle install
 # script
-
-yarn ci
+which yarn
+yarn -v
+yarn run ci

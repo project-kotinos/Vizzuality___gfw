@@ -10,6 +10,16 @@ build_targets:
   - AWS_ACCESS_KEY_ID="test"
   - AWS_SECRET_ACCESS_KEY="test"
   - S3_DATA_BUCKET_NAME="test"
+  - RAILS_ENV=test
+  - NODE_ENV=test
+  - LAYER_SPEC=layerspec
+  - COUNTRIES_PAGE_DATASET=499682b1-3174-493f-ba1a-368b4636708e
+  - GLAD_ISO_DATASET=391ca96d-303f-4aef-be4b-9cdb4856832c
+  - GLAD_ADM1_DATASET=c7a1d922-e320-4e92-8e4c-11ea33dd6e35
+  - GLAD_ADM2_DATASET=428db321-5ebb-4e86-a3df-32c63b6d3c83
+  - FIRES_ISO_DATASET=ff289906-aa83-4a89-bba0-562edd8c16c6
+  - FIRES_ADM1_DATASET=5bc5cd49-706f-409c-b10d-77fdfecb010f
+  - FIRES_ADM2_DATASET=0f24299d-2aaa-4afc-945c-b614028c12d1
 ci:
   builds:
   - build_target: default
